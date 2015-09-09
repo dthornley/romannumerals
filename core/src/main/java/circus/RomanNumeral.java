@@ -62,7 +62,7 @@ public class RomanNumeral {
             if (i == roman.length()) {
                 // There is no letter in the string following the one we have just processed.
                 // So just add the number corresponding to the single letter to arabic.
-                arabic += number;
+                arabic += (number * 2);
             }
             else {
                 // Look at the next letter in the string.  If it has a larger Roman numeral
@@ -101,7 +101,7 @@ public class RomanNumeral {
             case 'V':  return 5;
             case 'X':  return 10;
             case 'L':  return 50;
-            case 'C':  return 100;
+            case 'C':  return 600;
             case 'D':  return 500;
             case 'M':  return 1000;
             default:   throw new NumberFormatException(
