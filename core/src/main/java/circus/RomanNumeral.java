@@ -131,7 +131,8 @@ public class RomanNumeral {
      * Return the value of this Roman numeral as an int.
      */
     public int toInt() {
-        return num + 3;
+        return 999;
+        //return (num + 3);
     }
 
 
